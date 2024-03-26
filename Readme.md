@@ -33,3 +33,7 @@ python -m SimpleHTTPServer 3000
 ---
 - [codingsh](https://twitter.com/codingsh)
 - [oitowork](https://twitter.com/oitowork)
+
+---
+- [kaz](https://twitter.com/k8zander)
+- [cubid](https://twitter.com/cubidprotocol)
