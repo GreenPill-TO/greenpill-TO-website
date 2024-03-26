@@ -6,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Building localized 🌱 regenerative cryptoeconomics & public goods in Texas (Austin + Dallas). Chapter of GreenPill Network.">
+    content="Building localized 🌱 regenerative cryptoeconomics & public goods in Toronto, Ontario. A chapter of GreenPill Network.">
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@greenpilltx">
-  <meta name="twitter:creator" content="@plugrel">
-  <meta name="twitter:title" content="GreenPill Texas">
+  <meta name="twitter:site" content="@greenpill_to">
+  <meta name="twitter:creator" content="@k8zander">
+  <meta name="twitter:title" content="GreenPill TO">
   <meta name="twitter:description"
     content="Build a more solarpunk future by getting Green Pilled, pledge to support public goods + join the Green Pill Party today.">
   <meta name="twitter:image" content="https://greenpill.party/image/twitter.png">
 
 
-  <title>GreenPill Texas</title>
+  <title>GreenPill TO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
@@ -32,11 +32,11 @@
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- https://ogp.me/ -->
-  <meta property="og:title" content="GreenPill Texas" />
+  <meta property="og:title" content="GreenPill TO" />
   <meta property="og:type" content="blockchain" />
-  <meta property="og:url" content="https://greenpill.tx" />
+  <meta property="og:url" content="https://greenpill.to" />
   <meta property="og:image" content="https://greenpill.party/image/twitter.png" />
-  <meta property="og:description" content="Building localized 🌱 regenerative cryptoeconomics & public goods in Texas (Austin + Dallas). Chapter of GreenPill Network" />
+  <meta property="og:description" content="Building localized 🌱 regenerative cryptoeconomics & public goods in Toronto, Ontario. A chapter of GreenPill Network" />
 </head>
 
 <body>
@@ -54,12 +54,12 @@
     <section class="coordination-hero background-bubble">
       <div class="hero-container">
         <div class="coordination-party-hero-description">
-          <h1 class="title">Green Pilling Texas</h1>
+          <h1 class="title">Green Pilling Toronto, Ontario</h1>
           <div class="call-action-wrapper-buttons">
             <button id="greenpill" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
               data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="1.7"
               bubbleToGo=>
-              <p>Join the GP Texas Chapter</p>
+              <p>Join the GP TO Chapter</p>
             </button>
           </div>
         </div>
@@ -142,7 +142,7 @@
           <input type="text" id="percentage" name="percentage" placeholder="1 hour" value="1 hour" />
           <!-- <input type="text" id="amount" name="amount" placeholder="$10mm" value="$10mm" /> -->
           <label for="cause">to commit</label>
-          <input type="text" id="cause" name="cause" placeholder="Public Goods Funding" value="regenerating Texas" />
+          <input type="text" id="cause" name="cause" placeholder="Public Goods Funding" value="regenerating Toronto & Ontario" />
 
           <div class="buttons-green-pill">
             <button type="button">
@@ -162,14 +162,14 @@
           </div>
             <BR>
               <a
-                href="https://t.me/GreenPillTX">Regen with us.</a>
+                href="https://t.me/GreenPillTO">Regen with us.</a>
         </form>
       </div>
     </section>
     <div class="gitcoin-brand">
       <a href="https://gitcoindao.com">
         <img src="./image/gitcoindao_sign.svg" alt="gitcoinDAO" />
-      </a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <a href="https://t.me/GreenPillTX">Join the Telegram</a>
+      </a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <a href="https://t.me/GreenPillTO">Join the Telegram</a>
     </div>
   </footer>
 </body>
@@ -265,15 +265,15 @@
   const navLinks = [{
     "greenpill": [{
         title: "START",
-        link: "https://app.charmverse.io/greenpill-tx/",
+        link: "https://app.charmverse.io/greenpill-to/",
       },
       {
         title: "Telegram",
-        link: "https://t.me/GreenPillTX",
+        link: "https://t.me/GreenPillTO",
       },
       {
         title: "Twitter",
-        link: "https://twitter.com/GreenPillTX",
+        link: "https://twitter.com/GreenPillTO",
       }
     ]
   }];
@@ -319,12 +319,12 @@
   document.getElementById('target').onclick = function(e){
     var X = document.getElementById('percentage').value;
     var cause = document.getElementById('cause').value;
-    var text = `💚 I took the #GreenPill with @GreenPillTX and pledged ${X} of my time to grow localized regen economies in #Texas @greenpillnetwork!
+    var text = `💚 I took the #GreenPill with @GreenPillTO and pledged ${X} of my time to grow localized regen economies in #Toronto @greenpillnetwork!
 
 🤖❤️ If you join me we can build a #SolarPunk future together.
 
 👉 Make the pledge here:`
-    var url = 'https://GreenPill.tx/'
+    var url = 'https://GreenPill.to/'
     window.open("https://twitter.com/intent/tweet?text=" +encodeURIComponent(text)+ "&url=" + encodeURI(url),"_blank");
   }
   
@@ -341,7 +341,7 @@ document.getElementById('epub').onclick = function(e){
 }
 
 document.getElementById('telegram').onclick = function(e) {
-  window.open("https://t.me/GreenPillTX", "_blank");
+  window.open("https://t.me/GreenPillTO", "_blank");
 }
 
 document.getElementById('podcast').onclick = function(e) {
