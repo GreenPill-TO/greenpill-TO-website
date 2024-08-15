@@ -13,9 +13,6 @@
   <meta name="twitter:site" content="@greenpill_to">
   <meta name="twitter:creator" content="@k8zander">
   <meta name="twitter:title" content="GreenPill TO">
-  <meta name="twitter:description"
-    content="Build a more solarpunk future by getting Green Pilled, pledge to support public goods + join the Green Pill Party today.">
-  <meta name="twitter:image" content="https://greenpill.party/image/twitter.png">
 
 
   <title>GreenPill TO</title>
@@ -58,7 +55,7 @@
           <div class="call-action-wrapper-buttons">
             <button id="greenpill" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
               data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="1.7"
-              bubbleToGo=>
+              bubbleToGo="" onclick="window.location.href='https://t.me/+3zWluXm3FSViYmIx';">
               <p>Join the GP TO Chapter</p>
             </button>
           </div>
@@ -141,7 +138,7 @@
           <label for="percentage">I Pledge</label>
           <input type="text" id="percentage" name="percentage" placeholder="1 hour" value="1 hour" />
           <!-- <input type="text" id="amount" name="amount" placeholder="$10mm" value="$10mm" /> -->
-          <label for="cause">to commit</label>
+          <label for="cause">to</label>
           <input type="text" id="cause" name="cause" placeholder="Public Goods Funding" value="regenerating Toronto & Ontario" />
 
           <div class="buttons-green-pill">
@@ -162,14 +159,14 @@
           </div>
             <BR>
               <a
-                href="https://t.me/GreenPillTO">Regen with us.</a>
+                href="https://t.me/+3zWluXm3FSViYmIx">Regen with us.</a>
         </form>
       </div>
     </section>
     <div class="gitcoin-brand">
       <a href="https://gitcoindao.com">
         <img src="./image/gitcoindao_sign.svg" alt="gitcoinDAO" />
-      </a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <a href="https://t.me/GreenPillTO">Join the Telegram</a>
+      </a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <a href="https://t.me/+3zWluXm3FSViYmIx">Join the Telegram</a>
     </div>
   </footer>
 </body>
@@ -269,7 +266,7 @@
       },
       {
         title: "Telegram",
-        link: "https://t.me/GreenPillTO",
+        link: "https://t.me/+3zWluXm3FSViYmIx",
       },
       {
         title: "Twitter",
@@ -319,7 +316,7 @@
   document.getElementById('target').onclick = function(e){
     var X = document.getElementById('percentage').value;
     var cause = document.getElementById('cause').value;
-    var text = `💚 I took the #GreenPill with @GreenPillTO and pledged ${X} of my time to grow localized regen economies in #Toronto @greenpillnetwork!
+    var text = `💚 I took the #GreenPill with @GreenPillTO and pledged ${X} of my time to $(cause) in #Toronto @greenpillnetwork!
 
 🤖❤️ If you join me we can build a #SolarPunk future together.
 
@@ -341,7 +338,7 @@ document.getElementById('epub').onclick = function(e){
 }
 
 document.getElementById('telegram').onclick = function(e) {
-  window.open("https://t.me/GreenPillTO", "_blank");
+  window.open("https://t.me/+3zWluXm3FSViYmIx", "_blank");
 }
 
 document.getElementById('podcast').onclick = function(e) {
