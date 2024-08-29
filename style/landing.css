@@ -319,23 +319,22 @@ button#greenpill:hover {
 /* Styles for the Affiliates and Community Meetups sections */
 
 .affiliates {
+    width: 100%; /* Ensure the section takes up the full width of the screen */
     padding: 50px 0;
     background-color: #f4f4f4; /* Light grey background to distinguish the section */
 }
 
 .affiliates .wrapper {
-    max-width: 100%;
+    width: 100%; /* Ensure the wrapper also takes up the full width */
     margin: 0 auto;
     text-align: center;
-    padding-left: 10%; /* Optional: Add some padding to the left and right for better spacing */
-    padding-right: 10%;
 }
 
 .affiliates .title {
     font-family: 'Space Mono', monospace, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px; /* Adjusted for consistency */
+    font-size: 36px;
     color: #0E0333;
     margin-bottom: 30px;
 }
