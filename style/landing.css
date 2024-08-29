@@ -320,14 +320,15 @@ button#greenpill:hover {
 
 .affiliates {
     width: 100%; /* Ensure the section takes up the full width of the screen */
-    padding: 20px 0; /* Reduced padding to minimize space */
-    background-color: #f4f4f4; /* Light grey background to distinguish the section */
+    padding: 0; /* Remove padding to eliminate extra space */
+    background-color: #f4f4f4; /* Light grey background */
 }
 
 .affiliates .wrapper {
-    width: 100%; /* Ensure the wrapper also takes up the full width */
+    width: 100%; /* Ensure the wrapper takes up the full width */
     margin: 0 auto;
     text-align: center;
+    padding: 0; /* Remove padding to eliminate extra space */
 }
 
 .affiliates .title {
@@ -336,30 +337,18 @@ button#greenpill:hover {
     font-weight: normal;
     font-size: 36px;
     color: #0E0333;
-    margin-bottom: 20px; /* Reduce margin below the title to minimize space */
+    margin: 0 0 10px 0; /* Reduce or remove margin below the title */
 }
 
 .affiliates-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 0; /* Ensure there's no extra margin below the list */
+    margin: 0; /* Ensure there's no extra margin around the list */
 }
 
 .affiliates-list li {
-    margin: 10px 0; /* Slightly reduced margin between list items */
+    margin: 10px 0; /* Maintain spacing between list items */
 }
-
-.affiliates-list a {
-    text-decoration: none;
-    color: #2980b9; /* Blue color for links */
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.affiliates-list a:hover {
-    color: #1abc9c; /* Change link color on hover */
-}
-
 
 /* Responsive Style */
 @media (max-width: 1280px) {
