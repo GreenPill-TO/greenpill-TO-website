@@ -320,15 +320,16 @@ button#greenpill:hover {
 
 .affiliates {
     width: 100%; /* Ensure the section takes up the full width of the screen */
-    padding: 0; /* Remove padding to eliminate extra space */
-    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px 0; /* Minimal padding */
+    margin: 0; /* Remove margin */
+    background-color: #f4f4f4;
 }
 
 .affiliates .wrapper {
-    width: 100%; /* Ensure the wrapper takes up the full width */
+    width: 100%;
     margin: 0 auto;
+    padding: 0; /* Remove any padding */
     text-align: center;
-    padding: 0; /* Remove padding to eliminate extra space */
 }
 
 .affiliates .title {
@@ -336,18 +337,13 @@ button#greenpill:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
-    color: #0E0333;
-    margin: 0 0 10px 0; /* Reduce or remove margin below the title */
+    margin: 0 0 20px 0; /* Remove top margin, minimal bottom margin */
 }
 
 .affiliates-list {
     list-style: none;
     padding: 0;
-    margin: 0; /* Ensure there's no extra margin around the list */
-}
-
-.affiliates-list li {
-    margin: 10px 0; /* Maintain spacing between list items */
+    margin: 0; /* Remove any list margins */
 }
 
 /* Responsive Style */
