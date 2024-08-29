@@ -322,7 +322,7 @@ button#greenpill:hover {
     width: 100%; /* Ensure the section takes up the full width of the screen */
     padding: 20px 0; /* Minimal padding */
     margin: 0; /* Remove margin */
-    background-color: #f4f4f4;
+    background-color: white;
     height: auto; /* Ensure height is set to auto */
     min-height: auto; /* Ensure min-height is not forcing the height */
     flex: none; /* Prevent flexbox from stretching */
