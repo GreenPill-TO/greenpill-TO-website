@@ -316,6 +316,48 @@ button#greenpill:hover {
     transform: translateY(-2px)
 }
 
+/* Styles for the Affiliates and Community Meetups sections */
+
+.affiliates {
+    padding: 50px 0;
+    background-color: #f4f4f4; /* Light grey background to distinguish the section */
+}
+
+.affiliates .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.affiliates .title {
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px; /* Adjusted for consistency */
+    color: #0E0333;
+    margin-bottom: 30px;
+}
+
+.affiliates-list {
+    list-style: none;
+    padding: 0;
+}
+
+.affiliates-list li {
+    margin: 15px 0;
+}
+
+.affiliates-list a {
+    text-decoration: none;
+    color: #2980b9; /* Blue color for links */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.affiliates-list a:hover {
+    color: #1abc9c; /* Change link color on hover */
+}
+
 /* Responsive Style */
 @media (max-width: 1280px) {
 
