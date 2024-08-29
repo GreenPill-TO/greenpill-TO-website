@@ -323,6 +323,9 @@ button#greenpill:hover {
     padding: 20px 0; /* Minimal padding */
     margin: 0; /* Remove margin */
     background-color: #f4f4f4;
+    height: auto; /* Ensure height is set to auto */
+    min-height: auto; /* Ensure min-height is not forcing the height */
+    flex: none; /* Prevent flexbox from stretching */
 }
 
 .affiliates .wrapper {
@@ -330,6 +333,8 @@ button#greenpill:hover {
     margin: 0 auto;
     padding: 0; /* Remove any padding */
     text-align: center;
+    height: auto; /* Ensure height is set to auto */
+    min-height: auto; /* Ensure min-height is not forcing the height */
 }
 
 .affiliates .title {
