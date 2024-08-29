@@ -324,9 +324,11 @@ button#greenpill:hover {
 }
 
 .affiliates .wrapper {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding-left: 10%; /* Optional: Add some padding to the left and right for better spacing */
+    padding-right: 10%;
 }
 
 .affiliates .title {
