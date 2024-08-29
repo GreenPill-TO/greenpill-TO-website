@@ -320,7 +320,7 @@ button#greenpill:hover {
 
 .affiliates {
     width: 100%; /* Ensure the section takes up the full width of the screen */
-    padding: 50px 0;
+    padding: 20px 0; /* Reduced padding to minimize space */
     background-color: #f4f4f4; /* Light grey background to distinguish the section */
 }
 
@@ -336,16 +336,17 @@ button#greenpill:hover {
     font-weight: normal;
     font-size: 36px;
     color: #0E0333;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduce margin below the title to minimize space */
 }
 
 .affiliates-list {
     list-style: none;
     padding: 0;
+    margin-bottom: 0; /* Ensure there's no extra margin below the list */
 }
 
 .affiliates-list li {
-    margin: 15px 0;
+    margin: 10px 0; /* Slightly reduced margin between list items */
 }
 
 .affiliates-list a {
@@ -358,6 +359,7 @@ button#greenpill:hover {
 .affiliates-list a:hover {
     color: #1abc9c; /* Change link color on hover */
 }
+
 
 /* Responsive Style */
 @media (max-width: 1280px) {
