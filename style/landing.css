@@ -89,6 +89,22 @@ h1{
     margin: 0px auto 50px;
 }
 
+/* Ensure parent container takes full width */
+.call-action-box {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjust iframe to take full width */
+iframe {
+  width: 100%;
+  max-width: 80vw; /* 80% of viewport width */
+  height: 80vh; /* Adjust as needed */
+  border: none;
+}
+
 .coordination-party-hero-description {
     width: 472px;
     margin: auto auto auto 14.5625rem;
