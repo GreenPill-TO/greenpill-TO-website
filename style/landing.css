@@ -1081,6 +1081,21 @@ button a {
   margin-bottom: 20px;
 }
 
+/* Center the iframe content */
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px; /* Adjust padding as needed */
+  overflow: hidden;
+  width: 100%;
+}
+
+.iframe-container iframe {
+  width: 85%; /* Adjust width to create centering effect */
+  height: 80vh; /* Adjust height to fit the viewport */
+  max-width: 1000px; /* Max width to control scaling */
+}
+
 .wrapper iframe {
   width: 80vw; /* 80% of viewport width */
   height: 80vh; /* 80% of viewport height */
