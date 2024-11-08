@@ -446,8 +446,17 @@ button#greenpill:hover {
 }
 
 .wrapper {
-    width: 25.5625rem;
-    height: 30.625rem;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper iframe {
+  width: 80vw; /* 80% of the viewport width */
+  height: 80vh; /* 80% of the viewport height */
+  max-width: none;
+  border: none;
 }
 
 .wrapper.nft {
