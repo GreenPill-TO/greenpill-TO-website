@@ -712,7 +712,7 @@ button a {
     }
 
     .call-action-box {
-        width: 350px;
+        width: 100%;
         margin-left: 70px;
     }
 
