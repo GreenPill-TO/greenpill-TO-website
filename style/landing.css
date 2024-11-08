@@ -1058,17 +1058,3 @@ button a {
     }
 
 }
-
-.call-action-box {
-  width: 100% !important;
-  max-width: 100% !important;
-  display: flex;
-  justify-content: center;
-}
-
-iframe {
-  width: 100% !important;
-  max-width: 80vw !important; /* 80% of viewport width */
-  height: 80vh !important; /* Adjust as needed */
-  border: none;
-}
