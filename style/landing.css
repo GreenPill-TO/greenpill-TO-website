@@ -1067,3 +1067,39 @@ button a {
     }
 
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content inside the wrapper */
+  width: 100%;
+}
+
+.call-action-info {
+  width: 100%;
+  text-align: center; /* Center-align text */
+  margin-bottom: 20px;
+}
+
+.wrapper iframe {
+  width: 80vw; /* 80% of viewport width */
+  height: 80vh; /* 80% of viewport height */
+  max-width: 100%; /* Ensure it doesn't exceed 100% */
+  border: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 10px; /* Add padding to avoid edges */
+  }
+
+  .call-action-info h1.title {
+    font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+
+  .wrapper iframe {
+    width: 100%; /* Take full width on smaller screens */
+    height: 60vh; /* Adjust height for mobile */
+  }
+}
