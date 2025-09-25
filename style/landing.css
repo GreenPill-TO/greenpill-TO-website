@@ -345,6 +345,13 @@ button#greenpill:hover {
     margin: 0 0 20px 0; /* Remove top margin, minimal bottom margin */
 }
 
+@media (min-width: 1024px) {
+    .affiliates-established .title,
+    .affiliates-startups .title {
+        padding: 0 4rem;
+    }
+}
+
 .affiliates-list {
     list-style: none;
     padding: 0;
@@ -582,7 +589,42 @@ button#greenpill:hover {
     display: flex;
   }
 
+  .call-action-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #0E0333;
+  }
+
+  .call-action-description a {
+    color: #0E0333;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .large-text {
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  #telegram {
+    width: 260px;
+    height: 72px;
+  }
+
+  #telegram p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
   #book-section, #nft-section, #podcast-section, #telegram-section {
+    margin-bottom: 7rem;
+  }
+
+  #network-section {
     margin-bottom: 7rem;
   }
 
@@ -602,6 +644,19 @@ button#greenpill:hover {
 
   #book-section .call-action-box {
     margin-left: 8.5625rem;
+  }
+
+  .call-to-action-network .network-image {
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), rgba(2, 226, 172, 0.3));
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  }
+
+  .call-to-action-network .call-action-box {
+    margin-right: 12rem;
   }
 
   #nft-section .call-action-box {
@@ -635,7 +690,7 @@ button a {
 }
 
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -729,9 +784,19 @@ button a {
         width: 100%;
     }
 
-    .call-to-action.background .call-action-box { 
+    .call-to-action.background .call-action-box {
         width: auto;
         margin: 40px;
+    }
+
+    .call-to-action-network .network-image {
+        width: 320px;
+        height: 320px;
+        margin-top: 40px;
+    }
+
+    .call-to-action-network .call-action-box {
+        margin: 40px auto;
     }
 
     .call-action-info .title {
@@ -769,6 +834,11 @@ button a {
     }
     #book-section .call-action-box {
         margin-left: 5.5625rem;
+    }
+
+    .call-action-description {
+        margin-bottom: 1rem;
+        text-align: center;
     }
 }
 
