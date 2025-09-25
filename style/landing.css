@@ -319,43 +319,80 @@ button#greenpill:hover {
 /* Styles for the Affiliates and Community Meetups sections */
 
 .affiliates {
-    width: 100%; /* Ensure the section takes up the full width of the screen */
-    padding: 20px 0; /* Minimal padding */
-    margin: 0; /* Remove margin */
-    background-color: white;
-    height: auto; /* Ensure height is set to auto */
-    min-height: auto; /* Ensure min-height is not forcing the height */
-    flex: none; /* Prevent flexbox from stretching */
+    width: 100%;
+    padding: 3rem 0;
+    margin: 0;
+    background-color: #ffffff;
+    height: auto;
+    min-height: auto;
+    flex: none;
 }
 
 .affiliates .wrapper {
     width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0; /* Remove any padding */
-    text-align: center;
-    height: auto; /* Ensure height is set to auto */
-    min-height: auto; /* Ensure min-height is not forcing the height */
+    padding: 0 8vw;
+    align-items: flex-start;
+    gap: 1.75rem;
 }
 
 .affiliates .title {
     font-family: 'Space Mono', monospace, sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    margin: 0 0 20px 0; /* Remove top margin, minimal bottom margin */
+    font-weight: 400;
+    font-size: clamp(1.75rem, 2vw + 0.5rem, 2.5rem);
+    margin: 0;
+    text-align: left;
+    line-height: 1.3;
 }
 
-@media (min-width: 1024px) {
-    .affiliates-established .title,
-    .affiliates-startups .title {
-        padding: 0 4rem;
-    }
+.affiliates-intro {
+    font-size: clamp(1rem, 1.2vw + 0.6rem, 1.2rem);
+    line-height: 1.7;
+    color: #0E0333;
+    text-align: left;
+}
+
+.affiliates-intro a {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .affiliates-list {
     list-style: none;
     padding: 0;
-    margin: 0; /* Remove any list margins */
+    margin: 0;
+    width: 100%;
+}
+
+.affiliates-list li {
+    margin-bottom: 1.25rem;
+}
+
+.affiliates-list li:last-child {
+    margin-bottom: 0;
+}
+
+.affiliates-list li a {
+    display: block;
+    font-size: clamp(0.95rem, 1vw + 0.65rem, 1.2rem);
+    line-height: 1.8;
+    text-align: left;
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .affiliates {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .affiliates .wrapper {
+        padding: 0 1.5rem;
+    }
 }
 
 /* Responsive Style */
@@ -650,9 +687,19 @@ button#greenpill:hover {
     width: 520px;
     height: 520px;
     border-radius: 50%;
-    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), rgba(2, 226, 172, 0.3));
     border: 4px solid rgba(255, 255, 255, 0.6);
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), rgba(2, 226, 172, 0.3));
+  }
+
+  .call-to-action-network .network-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .call-to-action-network .call-action-box {
@@ -1155,9 +1202,11 @@ button a {
 .iframe-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px; /* Adjust padding as needed */
   overflow: hidden;
   width: 100%;
+  margin: 0 auto;
 }
 
 .iframe-container iframe {
