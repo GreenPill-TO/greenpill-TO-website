@@ -319,36 +319,80 @@ button#greenpill:hover {
 /* Styles for the Affiliates and Community Meetups sections */
 
 .affiliates {
-    width: 100%; /* Ensure the section takes up the full width of the screen */
-    padding: 20px 0; /* Minimal padding */
-    margin: 0; /* Remove margin */
-    background-color: white;
-    height: auto; /* Ensure height is set to auto */
-    min-height: auto; /* Ensure min-height is not forcing the height */
-    flex: none; /* Prevent flexbox from stretching */
+    width: 100%;
+    padding: 2.25rem 0;
+    margin: 0;
+    background-color: #ffffff;
+    height: auto;
+    min-height: auto;
+    flex: none;
 }
 
 .affiliates .wrapper {
     width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0; /* Remove any padding */
-    text-align: center;
-    height: auto; /* Ensure height is set to auto */
-    min-height: auto; /* Ensure min-height is not forcing the height */
+    padding: 0 8vw;
+    align-items: flex-start;
+    gap: 1.25rem;
 }
 
 .affiliates .title {
     font-family: 'Space Mono', monospace, sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    margin: 0 0 20px 0; /* Remove top margin, minimal bottom margin */
+    font-weight: 400;
+    font-size: clamp(1rem, 0.6vw + 0.8rem, 1.2rem);
+    margin: 0 0 0.75rem;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.affiliates-intro {
+    font-size: clamp(1rem, 1.2vw + 0.6rem, 1.2rem);
+    line-height: 1.7;
+    color: #0E0333;
+    text-align: left;
+}
+
+.affiliates-intro a {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .affiliates-list {
     list-style: none;
     padding: 0;
-    margin: 0; /* Remove any list margins */
+    margin: 0;
+    width: 100%;
+}
+
+.affiliates-list li {
+    margin-bottom: 1.25rem;
+}
+
+.affiliates-list li:last-child {
+    margin-bottom: 0;
+}
+
+.affiliates-list li a {
+    display: block;
+    font-size: clamp(0.95rem, 1vw + 0.65rem, 1.2rem);
+    line-height: 1.8;
+    text-align: left;
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .affiliates {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .affiliates .wrapper {
+        padding: 0 1.5rem;
+    }
 }
 
 /* Responsive Style */
@@ -582,7 +626,42 @@ button#greenpill:hover {
     display: flex;
   }
 
+  .call-action-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #0E0333;
+  }
+
+  .call-action-description a {
+    color: #0E0333;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .large-text {
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  #telegram {
+    width: 260px;
+    height: 72px;
+  }
+
+  #telegram p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
   #book-section, #nft-section, #podcast-section, #telegram-section {
+    margin-bottom: 7rem;
+  }
+
+  #network-section {
     margin-bottom: 7rem;
   }
 
@@ -602,6 +681,29 @@ button#greenpill:hover {
 
   #book-section .call-action-box {
     margin-left: 8.5625rem;
+  }
+
+  .call-to-action-network .network-image {
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), rgba(2, 226, 172, 0.3));
+  }
+
+  .call-to-action-network .network-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .call-to-action-network .call-action-box {
+    margin-right: 12rem;
   }
 
   #nft-section .call-action-box {
@@ -635,7 +737,7 @@ button a {
 }
 
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -729,9 +831,19 @@ button a {
         width: 100%;
     }
 
-    .call-to-action.background .call-action-box { 
+    .call-to-action.background .call-action-box {
         width: auto;
         margin: 40px;
+    }
+
+    .call-to-action-network .network-image {
+        width: 320px;
+        height: 320px;
+        margin-top: 40px;
+    }
+
+    .call-to-action-network .call-action-box {
+        margin: 40px auto;
     }
 
     .call-action-info .title {
@@ -769,6 +881,11 @@ button a {
     }
     #book-section .call-action-box {
         margin-left: 5.5625rem;
+    }
+
+    .call-action-description {
+        margin-bottom: 1rem;
+        text-align: center;
     }
 }
 
@@ -1085,9 +1202,11 @@ button a {
 .iframe-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px; /* Adjust padding as needed */
   overflow: hidden;
   width: 100%;
+  margin: 0 auto;
 }
 
 .iframe-container iframe {
